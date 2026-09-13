@@ -1,0 +1,16 @@
+name: Variables Demo
+
+on:
+  workflow_dispatch:
+
+env:
+  APP_NAME: github-actions-lab
+
+jobs:
+  demo:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo "Application=$APP_NAME"
