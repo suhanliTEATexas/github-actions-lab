@@ -1,0 +1,22 @@
+name: Hello World
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Print Greeting
+        run: |
+          echo "Hello Suhan!"
+          echo "Welcome to GitHub Actions"
+
+      - name: Display Information
+        run: |
+          pwd
+          whoami
+          uname -a
